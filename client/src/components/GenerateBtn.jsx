@@ -6,9 +6,10 @@ import { useNavigate } from "react-router-dom";
 
 const GenerateBtn = () => {
   const { user, setShowLogin } = useContext(AppContext);
-  const navigate = useNavigate;
+  const navigate = useNavigate();
 
   const onClickHandler = () => {
+    console.log("clicked");
     if (user) {
       navigate("/result");
     } else {

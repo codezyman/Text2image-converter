@@ -6,7 +6,7 @@ import { AppContext } from "../context/AppContext";
 
 const Header = () => {
   const { user, setShowLogin } = useContext(AppContext);
-  const navigate = useNavigate;
+  const navigate = useNavigate();
 
   const onClickHandler = () => {
     if (user) {
